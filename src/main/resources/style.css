@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf8f8; /* Fondo muy suave */
+    display: flex;
+    flex-direction: column; /* Alinea el título en la parte superior */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between; /* Alinea la tabla y formulario uno al lado del otro */
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 182, 193, 0.2);
+}
+
+/* Formulario */
+.form-container {
+    flex: 1;
+    background: #fff5f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(255, 182, 193, 0.2);
+}
+
+/* Título principal */
+h1 {
+    color: #d14791;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #b35a8b;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e0a6c6;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* Botón */
+button {
+    background: #e07ea6;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    display: block;
+    margin: 15px auto 0;
+}
+
+button:hover {
+    background: #d14791;
+}
+
+/* Tabla de resultados */
+.result-container {
+    flex: 1;
+    background: #fff5f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(255, 182, 193, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #e0a6c6;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #e07ea6;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Imágenes de animales */
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
