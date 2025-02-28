@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        staticfiles("src/main/resources");
+        staticfiles("src/main/resources/static");
         get("/hello", (req, resp) -> "Hello " + req.getValues("name"));
         get("/pi", (req, resp) -> {
             return String.valueOf(Math.PI);

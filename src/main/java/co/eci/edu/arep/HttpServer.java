@@ -12,7 +12,7 @@ import java.util.function.BiFunction;
 
 public class HttpServer {
     private static final int PORT = 8080;
-    private static String WEB_ROOT = "src/main/resources";
+    private static String WEB_ROOT = "src/main/resources/static";
     private static Map<String, BiFunction<HttpRequest, HttpResponse, String>> servicios = new HashMap<>();
     private static ExecutorService executor = Executors.newFixedThreadPool(10);
     private static volatile boolean running = true;
@@ -205,7 +205,7 @@ public class HttpServer {
         System.out.println("Serving static file: " + path);
         File file = new File(WEB_ROOT, path);
         System.out.println(file.getAbsolutePath());
-        File notFoundFile = new File(WEB_ROOT, "error.html");
+        File notFoundFile = new File(WEB_ROOT, "/error.html");
 
         if (!file.exists() || file.isDirectory()) {
 

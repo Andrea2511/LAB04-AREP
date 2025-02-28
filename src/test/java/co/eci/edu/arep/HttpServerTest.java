@@ -42,7 +42,7 @@ class HttpServerTest {
     void testServeStaticFile_FileExists() throws Exception {
         OutputStream out = new ByteArrayOutputStream();
 
-        HttpServer.serveStaticFile("/index.html", out);
+        HttpServer.serveStaticFile("/static/index.html", out);
 
         String result = out.toString();
         assertTrue(result.contains("HTTP/1.1 200 OK"));
