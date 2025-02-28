@@ -4,7 +4,7 @@ import static co.eci.edu.arep.HttpServer.start;
 import static co.eci.edu.arep.HttpServer.get;
 import static co.eci.edu.arep.HttpServer.staticfiles;
 
-public class main {
+public class Main {
 
     public static void main(String[] args) {
 
