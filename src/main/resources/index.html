@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Welcome to My Web App</h1>
+
+<div class="container">
+    <div class="result-container">
+        <h2>Results</h2>
+        <table id="resultTable">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Favorite Animal</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Aquí se agregarán dinámicamente las filas con JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="form-container">
+        <h2>Fill the Form</h2>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label>Choose Your Favorite Animal:</label>
+            <div id="animalSelection">
+                <label>
+                    <input type="radio" name="animal" value="cat" required>
+                    <img src="cat.jpg" alt="Cat">
+                    Cat
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="rabbit" required>
+                    <img src="rabbit.png" alt="Rabbit">
+                    Rabbit
+                </label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
