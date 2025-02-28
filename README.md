@@ -120,7 +120,9 @@ docker run -d -p 8080:8080 andreatorrest/dockerprimer:latest
 
 Accede desde el navegador usando la IP pública de la instancia:
 
-http://<AWS_PUBLIC_IP>:8080/greeting?name=Juan
+```bash
+http://ec2-3-83-146-166.compute-1.amazonaws.com:42000/app/hello?name=pedro
+```
 
 ## Tecnologías Utilizadas
 
